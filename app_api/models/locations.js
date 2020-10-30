@@ -34,7 +34,7 @@ const locationSchema = new mongoose.Schema({
     rating: {type: Number, 'default': 0, min: 0, max: 5},
     facilities: [String],
     coords: {
-        type: String,
+        type: {type: String},
         coordinates: [Number]
     },
     openingTimes: [openingTimeSchema],
